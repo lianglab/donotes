@@ -10,6 +10,10 @@
 
 This is notes for django 
 
+###On [flask](./flask)
+
+This is notes for flask 
+
 ###On [html](./html)
 
 This is notes for html 
