@@ -60,5 +60,40 @@ Salt是：
 
 	salt '*' test.ping
 
+####节点分组
+
+对目标服务器分组有以下七种方式，这七种方式的标示符分别为：
+
+1. G -- 针对 Grains 做单个匹配，例如：G@os:Ubuntu
+2. E -- 针对 minion 针对正则表达式做匹配，例如：E@web\d+.(dev|qa|prod).loc
+3. P -- 针对 Grains 做正则表达式匹配，例如：P@os:(RedHat|Fedora|CentOS)
+4. L -- 针对 minion 做列表匹配，例如：L@minion1.example.com,minion3.domain.com or bl*.domain.com
+5. I -- 针对 Pillar 做单个匹配，例如：I@pdata:foobar
+6. S -- 针对子网或是 IP 做匹配，例如：S@192.168.1.0/24 or S@192.168.1.100
+7. R -- 针对客户端范围做匹配，例如： R@%foo.bar
+	
+
+>列表组，采用L前缀标示
+
+	nodegroups:
+	  rs: 'L@rs1,rs2'
+
+>正则表达式，采用E前缀标示
+
+	nodegroups:
+	  test: 'E@rs[0-9]'
+
+>混合，测试结论为 or 后可以正则，and 则失败
+	
+	nodegroups:
+	  rs: 'L@rs1,rs2 or app21[0-9]'
+	
+>遇到故障及处理
+
+	1.Minion did not return. [Not connected]
+	修改客户端 /etc/salt/minion_id   内容等于minion中注册id
+
+	2.No minions matched the target. No command was sent, no jid was assigned.
+	分组表达式错误
 
 
