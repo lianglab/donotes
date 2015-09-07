@@ -112,7 +112,7 @@ salt-master默认配置文件/etc/salt/master默认配置如下：
 
 >登陆获取token
 
-	[root@rs2 ~]# curl -k https://192.168.100.83:8000/login -H "Accept: application/x-yaml"  -d username='saltapi' -d password='saltapi.123' -d eauth='pam'
+	[root@rs2 ~]# curl -k https://192.168.100.83:8000/login -H "Accept: application/x-yaml"  -d username='saltapi' -d password='password' -d eauth='pam'
 	
 	return:
 	- eauth: pam
