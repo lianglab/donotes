@@ -23,7 +23,7 @@ nagios是个入手很快的监控平台，默认采用email通知。微信开发
 	异常信息：{{keyword5.DATA}}
 	{{remark.DATA}}
 
->代码可见 [wxapi.py](./code/wxapi.md)
+>代码可见 [wxapi.py](./code/wxapi.py)
 
 	复合代码，根据需求选择对应功能
 
