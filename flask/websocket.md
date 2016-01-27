@@ -112,6 +112,19 @@
 
 	socketresponse = request.form['socketresponse']
 
+	p = subprocess.Popen('shellscript', shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+
+	while p.poll() == None:
+		line = p.stdout.readline()
+		print line
+		socketio.emit(socketresponse,
+			{'data':line, 'time': time.ctime()},
+			namespace='/websocket/runlog')
+
+	shellresult = p.wait()
+	if shellresult != 0:
+		return jsonify(result='shellscript Failed')
+
 	socketio.emit(socketresponse,
-		{'data': u'your reponse', 'time': time.ctime()},
+		{'data': u'shell done', 'time': time.ctime()},
 		namespace='/websocket/runlog')
