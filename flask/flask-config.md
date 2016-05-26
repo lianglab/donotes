@@ -32,6 +32,8 @@
 	app = Flask(__name__)
 	app.config.from_object('config')
 
->test.pys使用
+>test.py使用
+
+	from Stoy import app
 
     user = app.config['USER']
