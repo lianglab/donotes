@@ -26,7 +26,7 @@
 
 	USER = 'YOURUSER'
 
->包__init__.py中申明
+>包\_\_init\_\_.py中申明
 
 	from flask import Flask
 	app = Flask(__name__)
