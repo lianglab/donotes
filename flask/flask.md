@@ -3,26 +3,7 @@
 ###前言
 flask有很多启动方式，根据需要选择。
 
-
-###使用tornado
-
-在代码运行文件的同级目录，新建run.py，运行即可
-
-	#coding=utf-8
-	#!/usr/bin/python
-	
-	from tornado.wsgi import WSGIContainer
-	from tornado.httpserver import HTTPServer
-	from tornado.ioloop import IOLoop
-	from yourproject import app
-	
-	http_server = HTTPServer(WSGIContainer(app))
-	http_server.listen(5000)  #flask默认的端口
-	IOLoop.instance().start()
-
-###websocket启动方式
-
->目录架构
+###参考项目组织架构
 
 	Dtoy/
 		└── app/
@@ -37,6 +18,26 @@ flask有很多启动方式，根据需要选择。
 		        ├── runserver.py     
  				├── config.py      
 		        └── README.md
+
+
+###使用tornado
+
+>runserver.py
+
+	#coding=utf-8
+	#!/usr/bin/python
+	
+	from tornado.wsgi import WSGIContainer
+	from tornado.httpserver import HTTPServer
+	from tornado.ioloop import IOLoop
+	from Doty import app
+	
+	http_server = HTTPServer(WSGIContainer(app))
+	http_server.listen(5000)  #flask默认的端口
+	IOLoop.instance().start()
+
+###websocket启动方式
+
 
 >\_\_init\_\_.py
 
