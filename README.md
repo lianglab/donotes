@@ -47,7 +47,7 @@ This is notes about js
 
 This is notes for python 
 
-* [nagios-wx](./python/nagios-wx.md)
+* [nagios_wx](./python/nagios_wx.md)
 
 This is notes about the nagios-wx 
 
