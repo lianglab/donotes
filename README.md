@@ -59,6 +59,10 @@ This is notes about the nagios-wx
 
 This is notes about the Thread of flask 
 
+* [qrcode](./python/qrcode.md)
+
+This is notes about the qrcode 
+
 ###On [salt](./salt)
 
 This is notes for salt 
