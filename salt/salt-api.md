@@ -127,7 +127,7 @@ salt-master默认配置文件/etc/salt/master默认配置如下：
 
 >使用token进行通信
 
-	[root@rs2]# curl -k https://192.168.100.83:8000/ -H "Accept: application/x-yaml" -H "X-Auth-Token: 0052d8e47083305364b1b08108746e03f07ac434" -d client='local' -d tgt='*' -d fun='test.echo' -d arg='hello world'
+	[root@rs2]# curl -k https://192.168.100.83:8000/ -H "Accept: application/x-yaml" -H "X-Auth-Token: 0052d8e47083305364b1b08108746e03f07ac434" -d client='local' -d tgt='*' -d fun='test.echo' -d arg='hello world' -d arg='runas=user'
 
 	return:
 	- rs1: hello world
