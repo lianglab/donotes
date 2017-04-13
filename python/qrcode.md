@@ -1,15 +1,15 @@
-##qrcode
+## qrcode
 
-###前言
+### 前言
 python生产二维码记录
 
-###依赖
+### 依赖
 	
 	pip install Image
 	pip install qrcode
 
 
-###实例
+### 实例
 
 >简单
 

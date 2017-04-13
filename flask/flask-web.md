@@ -1,9 +1,9 @@
-##flask-web##
+## flask-web
 
-###前言###
+### 前言
 记录使用flask框架，前端的一些用法
 
-####静态文件调用
+#### 静态文件调用
 
 >js
 
@@ -16,7 +16,7 @@
 	<link href="{{url_for('static',filename='bootstrap.min.css')}}" rel="stylesheet">
 
 
-####get请求前端
+#### get请求前端
 
 	<head>
 	<meta charset="utf-8">  
@@ -231,7 +231,7 @@
 	</html>
 
 ****
-###TROUBLE
+### TROUBLE
 
 >AttributeError: ‘module’ object has no attribute ‘autoescape’
 

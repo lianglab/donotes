@@ -1,11 +1,11 @@
-##tablesorter
+## tablesorter
 
-###前言
+### 前言
 记录一些tablesorter相关的笔记
 
 下载地址：  [http://tablesorter.com/docs/#Download](http://tablesorter.com/docs/#Download)
 
-###使用（基于flask）
+### 使用（基于flask）
 
 >引用
 

@@ -1,15 +1,15 @@
-##JS note
+## JS note
 
-###前言
+### 前言
 记录一些jsx相关的笔记
 
 
-###js压缩
+### js压缩
 
 	uglifyjs FileSaver.js --comments /@source/ > FileSaver.min.js
 
 
-###传输内容，实现文件下载
+### 传输内容，实现文件下载
 
 >在触发器上，添加下载函数
 

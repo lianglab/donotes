@@ -1,11 +1,11 @@
-##salt-api
+## salt-api
 
-###前言###
+### 前言
 
 salt-api安装以及基础调用
 
 ***
-####初始化salt-api
+#### 初始化salt-api
 
 >初始化yum源
 
@@ -133,7 +133,7 @@ salt-master默认配置文件/etc/salt/master默认配置如下：
 	- rs1: hello world
 
 
-####封装salt-api的操作
+#### 封装salt-api的操作
 
 对salt-api进行封装，便于操作调用：[saltapi](./saltapi.py)
 
@@ -144,6 +144,6 @@ salt-master默认配置文件/etc/salt/master默认配置如下：
 	print sapi.list_all_key()
 
 
-###nodegroup分组问题
+### nodegroup分组问题
 
 在salt-master本地测试分组，发现不需要重启服务也可以识别。当采用网络时发现分组调不到，而直接导入对应的调用接口发现也可以。最后才测试出，配置文件早已读入内存，网络访问时并不在此读取原有文件。而其他方式是重新读取的，因此效果不同。	

@@ -1,12 +1,12 @@
 ## donotes
 
-###前言###
+### 前言
 
 记录运维开发过程中一些方法和技术
 
 ***
 
-###On [flask](./flask)
+### On [flask](./flask)
 
 This is notes for flask 
 
@@ -35,7 +35,7 @@ This is notes about the sqlite of flask
 This is notes about the websocket of flask 
  
 
-###On [html](./html)
+### On [html](./html)
 
 This is notes for html 
 
@@ -52,7 +52,7 @@ This is notes about form
 
 This is notes about tablesorter
 
-###On [python](./python)
+### On [python](./python)
 
 This is notes for python 
 
@@ -68,7 +68,7 @@ This is notes about the Thread of flask
 
 This is notes about the qrcode 
 
-###On [salt](./salt)
+### On [salt](./salt)
 
 This is notes for salt 
 

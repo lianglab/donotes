@@ -1,9 +1,9 @@
-##flask_run
+## flask_run
 
-###前言
+### 前言
 flask有很多启动方式，根据需要选择。
 
-###参考项目组织架构
+### 参考项目组织架构
 
 	Dtoy/
 		└── app/
@@ -20,7 +20,7 @@ flask有很多启动方式，根据需要选择。
 		        └── README.md
 
 
-###使用tornado
+### 使用tornado
 
 >runserver.py
 
@@ -36,7 +36,7 @@ flask有很多启动方式，根据需要选择。
 	http_server.listen(5000)  #flask默认的端口
 	IOLoop.instance().start()
 
-###websocket启动方式
+### websocket启动方式
 
 
 >\_\_init\_\_.py
